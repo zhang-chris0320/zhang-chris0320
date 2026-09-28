@@ -56,4 +56,8 @@
   <em>I hope to focus on AI4RealWorld — bringing AI closer to the problems people actually face.</em>
 </blockquote>
 
-<p align="center"><a href="./index.html">View the interactive homepage source →</a></p>
+<p align="center">
+  <a href="https://zhang-chris0320.github.io/zhang-chris0320/">Explore my interactive homepage →</a>
+  <br />
+  <sub>Source code lives in <a href="./index.html">index.html</a>.</sub>
+</p>
