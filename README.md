@@ -19,6 +19,11 @@
 
 <p align="center">🤖 Intelligent systems · 🧬 Proteins &amp; biomolecules · ⚗️ Scientific discovery · 🌍 Real-world impact</p>
 
+<blockquote align="center">
+  <em>TRANSIRE SUUM PECTUS MUNDOQUE POTIRI</em><br />
+  <sub>超越自身局限，掌握世界</sub>
+</blockquote>
+
 <hr />
 
 <h2 align="center">About Me</h2>
@@ -37,9 +42,9 @@
 
 <h2 align="center">My 2026 Wishes</h2>
 
-| 01 | 02 | 03 |
-|:---:|:---:|:---:|
-| Publish my first paper. | Explore more interesting fields. | Make steady progress in my studies. |
+| 01 | 02 | 03 | 04 |
+|:---:|:---:|:---:|:---:|
+| Publish my first paper. | Explore more interesting fields. | Make steady progress in my studies. | Finish CS224W. |
 
 <hr />
 
