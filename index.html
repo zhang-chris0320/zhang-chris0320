@@ -1123,7 +1123,7 @@
 
       .readme-wishes {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 10px;
         text-align: left;
       }
@@ -1147,6 +1147,34 @@
         color: #24292f;
         font-size: 0.85rem;
         line-height: 1.45;
+      }
+
+      .readme-motto {
+        max-width: 650px;
+        margin: 20px auto 18px;
+        padding: 16px 18px 15px;
+        border: 1px solid rgba(93, 107, 125, 0.2);
+        border-radius: 14px;
+        background: linear-gradient(110deg, rgba(245, 249, 255, 0.9), rgba(255, 247, 251, 0.86));
+        box-shadow: 0 8px 22px rgba(52, 68, 88, 0.05);
+      }
+
+      .readme-motto-latin {
+        margin: 0;
+        color: #29374a;
+        font-family: "Fraunces", "Iowan Old Style", Georgia, serif;
+        font-size: clamp(1.02rem, 2.4vw, 1.4rem);
+        font-style: italic;
+        font-weight: 600;
+        letter-spacing: 0.075em;
+        line-height: 1.35;
+      }
+
+      .readme-motto-chinese {
+        margin: 7px 0 0;
+        color: #69768a;
+        font-size: 0.94rem;
+        letter-spacing: 0.06em;
       }
 
       .readme-interest-list { margin: 0 0 18px; }
@@ -1458,6 +1486,15 @@
         color: #313b4a;
         font-size: 0.95rem;
         line-height: 1.5;
+      }
+
+      @media (max-width: 900px) {
+        .readme-wishes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
+
+      @media (max-width: 680px) {
+        .readme-motto-latin { font-size: 0.95rem; letter-spacing: 0.045em; }
+        .readme-motto-chinese { font-size: 0.88rem; letter-spacing: 0.035em; }
       }
 
       .readme-interest-list span {
@@ -1851,6 +1888,7 @@
 
       .readme-wishes > div:nth-child(2) .wish-progress i { animation-delay: -0.9s; }
       .readme-wishes > div:nth-child(3) .wish-progress i { animation-delay: -1.8s; }
+      .readme-wishes > div:nth-child(4) .wish-progress i { animation-delay: -2.7s; }
 
       [data-theme="dark"] body {
         color: #d9e1ea;
@@ -2036,6 +2074,10 @@
       <section class="readme-section readme-hero-note motion-reveal" style="--reveal-order: 1">
         <div class="readme-topic"><button class="robot-easter" type="button" aria-label="Activate science connection animation">🤖</button> AI for Science</div>
         <p>AI has shown me the possibility of reshaping the world.</p>
+        <div class="readme-motto" aria-label="Personal motto">
+          <p class="readme-motto-latin">TRANSIRE SUUM PECTUS MUNDOQUE POTIRI</p>
+          <p class="readme-motto-chinese">超越自身局限，掌握世界</p>
+        </div>
         <div class="science-constellation" aria-label="Interactive AI4S interest map">
           <svg class="constellation-links" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
             <line x1="50" y1="50" x2="18" y2="19"></line>
@@ -2096,6 +2138,11 @@
             <div class="wish-meta"><span>03</span><small>In progress</small></div>
             <p>Make steady progress in my studies.</p>
             <div class="wish-progress" aria-label="In progress"><i></i></div>
+          </div>
+          <div class="wish-card">
+            <div class="wish-meta"><span>04</span><small>Ongoing</small></div>
+            <p>Finish CS224W.</p>
+            <div class="wish-progress" aria-label="Ongoing"><i></i></div>
           </div>
         </div>
       </section>
